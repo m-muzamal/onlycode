@@ -146,8 +146,8 @@ public:
 
 			else
 			{
-				menue();
 				error();
+				menue();
 			}
 		}
 	}
