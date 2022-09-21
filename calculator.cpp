@@ -2,7 +2,7 @@
 // liberary
 #include <iostream>
 using namespace std;
-mzml
+
 // class with name project
 class project
 {
@@ -18,7 +18,7 @@ public:
 // menue function
 	void menue()
 	{
-		cout << "\tChose the number for operator." << endl;
+		cout << "\tChoose the number for operator." << endl;
 		cout << "\t1. Addition(+) \n";
 		cout << "\t2. Subtraction(-) \n";
 		cout << "\t3. Multiplication(*) \n";
@@ -26,7 +26,7 @@ public:
 		cin >> d;
 	}
 	
-	// constructor to initializ default value
+// constructor to initializ default value
 	project()
 	{
 		first = 0;
@@ -96,10 +96,13 @@ public:
 // error function
 	void error()
 	{
+        string temp;
 		cout << "\t-----------------------------------------" << endl;
 		cout << "\t\tChoose the correct one..!" << endl;
 		cout << "\t-----------------------------------------\n"
 			 << endl;
+        cout << "\t\tEnter any word to continue: ";
+        cin >> temp;
 	}
 
 // output function
@@ -143,8 +146,8 @@ public:
 
 			else
 			{
-				error();
 				menue();
+				error();
 			}
 		}
 	}
